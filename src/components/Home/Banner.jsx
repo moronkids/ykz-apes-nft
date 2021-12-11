@@ -20,11 +20,27 @@ function Banner() {
       >
         <div className="home-banner-wrapping justify-content-start align-items-center w-100 ">
           <div className="col-md-6 col-12 p-md-0 py-3 d-flex flex-column mx-auto text-center">
-            <div className="intro">Welcome to the</div>
-            <div className="solana">Solana Sea Bandits</div>
+            {/* <div className="intro">Welcome to the</div>
+            <div className="solana">Solana Sea Bandits</div> */}
             <div className="piranhas">Solana Sea Bandits</div>
             {/* <img src={Hero} alt="" className="img d-sm-none d-block" /> */}
             {/* <div className="minting">MINTING NOW LIVE 🚀🚀</div> */}
+
+            <div className="d-flex mx-auto justify-content-sm-start justify-content-center">
+              <Connect />
+            </div>
+            {wallet_ && (
+              <>
+                <h2
+                  style={{
+                    color: "#d07474",
+                  }}
+                  className="text d-sm-block d-flex mx-auto my-0 justify-content-sm-start justify-content-center pt-2"
+                >
+                  {datas[0] + " / " + datas[1]}
+                </h2>
+              </>
+            )}
             <div className="first-mint">
               YARR!! SOLANA SEA BANDITS ARE HERE! We are a crew of 1010 Sea
               Bandits coming for your booty! Our team works hard to deliver long
@@ -38,22 +54,6 @@ function Banner() {
               >
                 HERE{" "}
               </a>
-            </div>
-
-            {wallet_ && (
-              <>
-                <h2
-                  style={{
-                    color: "#d07474",
-                  }}
-                  className="text d-sm-block d-flex mx-auto my-0 justify-content-sm-start justify-content-center"
-                >
-                  {datas[0] + " / " + datas[1]}
-                </h2>
-              </>
-            )}
-            <div className="d-flex mx-auto justify-content-sm-start justify-content-center">
-              <Connect />
             </div>
           </div>
         </div>
