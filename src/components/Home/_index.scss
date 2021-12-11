@@ -1,0 +1,438 @@
+.home {
+  width: 100%;
+  height: 100%;
+  &-banner {
+    // max-width: 1216px;
+    background-image: url("../../assets/img/pirate-bg.png");
+    // background: #1e1339;
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 900px;
+    max-height: fit-content;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position-y: 0px;
+    @media (max-width: 1024px) {
+      min-height: 700px;
+    }
+    @media (max-width: 768px) {
+      min-height: 500px;
+    }
+    @media (max-width: 524px) {
+      min-height: 5 00px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      min-height: 100vh;
+      background-position: bottom;
+      background-size: contain;
+    }
+    &-wrapping {
+      min-height: 900px;
+      display: flex;
+      margin: 0 auto;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: 524px) {
+        padding: 20px;
+        min-height: 0px;
+      }
+      .intro {
+        font-family: "EndlessBossBattle";
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        color: #ffffff;
+        padding: 16px 0;
+        @media (max-width: 524px) {
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+      .solana {
+        font-family: "EndlessBossBattle";
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        color: #ffffff;
+        @media (max-width: 524px) {
+          font-size: 36px;
+          line-height: 40px;
+        }
+      }
+      .piranhas {
+        font-family: "EndlessBossBattle";
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 72px;
+        color: #6feb9d;
+        @media (max-width: 524px) {
+          font-size: 48px;
+          line-height: 48px;
+        }
+      }
+      .minting {
+        font-family: "EndlessBossBattle";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+        padding: 16px 0;
+      }
+      .first-mint {
+        font-family: "EndlessBossBattle";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #00a8c2;
+        padding: 16px 0;
+        @media (max-width: 524px) {
+          font-size: 16px;
+        }
+      }
+      .here {
+        font-family: "EndlessBossBattle";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #00a8c2;
+        @media (max-width: 524px) {
+          font-size: 16px;
+        }
+      }
+      .desc {
+        max-width: 800px;
+        color: #fff;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        font-weight: 400;
+        text-shadow: 0 0 20px #ffffff, 2px 2px 2px #000000;
+        @media (max-width: 524px) {
+          font-size: 14px;
+        }
+      }
+
+      .img {
+        // padding-top: 50px;
+        max-width: 300px;
+        width: 100%;
+        height: 100%;
+        min-height: 593px;
+        max-width: 626px;
+        @media (max-width: 524px) {
+          max-height: 361px;
+          min-height: auto;
+        }
+      }
+      .imgx {
+        @extend .img;
+        max-width: 60%;
+        max-height: 100%;
+      }
+      .box {
+        padding: 10px;
+        max-width: 450px;
+        width: 100%;
+        border-radius: 10px;
+        min-height: fit-content;
+        margin: 18px 27%;
+        border-radius: 10 px;
+        border: 4px solid #ffffff61;
+        text-align: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: row;
+        backdrop-filter: blur(12px);
+        background-color: rgba(255, 255, 255, 0.47);
+        @media (max-width: 524px) {
+          max-width: 350px;
+        }
+        .text {
+          font-size: 22px;
+          font-weight: 600 !important;
+          line-height: 36px;
+          color: #0c7097;
+          font-style: bold !important;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media (max-width: 524px) {
+            font-size: 17px;
+          }
+        }
+        .stat {
+          // padding: 15px 22px !important;
+          width: -moz-fit-content !important;
+          width: fit-content !important;
+          font-family: "Montserrat", sans-serif !important;
+          font-size: 20px !important;
+          font-weight: 700 !important;
+          // color: #ffffff !important;
+          // background-color: #1e1339 !important;
+          border-radius: 20px !important;
+          margin: 0 auto;
+        }
+      }
+      .stat {
+        // padding: 15px 22px !important;
+        width: -moz-fit-content !important;
+        width: fit-content !important;
+        font-family: "EndlessBossBattle";
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        color: #1e1339 !important;
+        // background-color: #ffffff !important;
+        border-radius: 20px !important;
+        text-align: left;
+        // &:hover {
+        //   box-shadow: #000000;
+        // }
+      }
+    }
+  }
+  &-desc {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    @media (max-width: 1200px) {
+      padding: 0 60px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 40px;
+    }
+    @media (max-width: 524px) {
+      padding: 20px 20px 20px 20px;
+    }
+    & .container {
+      // text-align: left;
+      .super {
+        font-family: "Gilroy-Heavy", sans-serif;
+        font-stretch: condensed;
+        font-size: 2.4rem;
+        margin-top: 0px;
+        font-weight: 600;
+        // color: #00ffa3;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        background-image: -webkit-linear-gradient(to right, #5d26c1, #a17fe0, #59c173); /* Chrome 10-25, Safari 5.1-6 */
+        // background-image: linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        // background-image: #59c173; /* fallback for old browsers */
+        // background-image: -webkit-linear-gradient(to right, #5d26c1, #a17fe0, #59c173); /* Chrome 10-25, Safari 5.1-6 */
+        background-image: linear-gradient(
+          to right,
+          #5d26c1,
+          #a17fe0,
+          #59c173
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        // -webkit-text-fill-color: transparent;
+        @media (max-width: 524px) {
+          font-size: 1.6rem;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+      h1 {
+        text-align: center;
+      }
+      color: #ffffff;
+      padding: 30px;
+      img {
+        max-width: 400px;
+        @media (max-width: 968px) {
+          max-width: 280px;
+        }
+      }
+    }
+    p {
+      line-height: 160%;
+      font-size: 21px;
+      @media (max-width: 524px) {
+        font-size: 18px;
+      }
+    }
+    img {
+      border-radius: 35px;
+    }
+    // ul,
+    // ol {
+    //   // background-position: cover;
+    //   padding-left: 0px;
+    //   list-style: none;
+    //   @media (max-width: 524px) {
+    //     margin-top: 0px;
+    //   }
+    //   div {
+    //   }
+    //   li {
+    //     background-image: url("../../assets/img/bgdesc.webp");
+    //     background-size: 642.5px;
+    //     background-repeat: repeat;
+    //     // backgr
+    //     padding: 40px 20px;
+    //     border: 2px solid #b3b3b3;
+    //     margin-bottom: 20px;
+    //     border-radius: 10px;
+    //   }
+    // }
+    .must-pad {
+      padding-left: 20px;
+    }
+    .flex-only {
+      flex-direction: row;
+      display: flex;
+      justify-content: flex-start;
+      @media (max-width: 524px) {
+        display: block !important;
+        margin: 0 auto !important;
+        // text-align: center !important;
+        // text-align: center;
+        img {
+          width: 200px !important;
+          height: auto;
+          text-align: center;
+          margin: 0 auto;
+          display: flex;
+        }
+      }
+    }
+  }
+  &-faq {
+    @extend .home-desc;
+    font-size: 16px;
+    display: block;
+    // background-color: rgb(248, 255, 253);
+    background-color: #f5f5f5;
+    color: #2f323a;
+    hr {
+      width: 100%;
+      color: rgb(0, 0, 0);
+      margin-bottom: 50px;
+    }
+
+    & .content-faq {
+      & .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        height: 25px;
+        & .arrow {
+          transform: rotate(180deg);
+          cursor: pointer;
+          @media (max-width: 524px) {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        & .arrow.active {
+          transform: rotate(0deg);
+          transition: cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        h3 {
+          cursor: pointer;
+        }
+      }
+      & .detail {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+      }
+      & .detail.active {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        transform: scale();
+      }
+    }
+  }
+  &-team {
+    @extend .home-desc;
+    color: white;
+  }
+
+  &-project {
+    @extend .home-desc;
+    color: rgb(0, 0, 0);
+    background-color: #f5f5f5;
+    @media (max-width: 768px) {
+      padding: 0px;
+      margin: 0px;
+      border-radius: 0px;
+    }
+    .desc {
+      @media (max-width: 768px) {
+        padding: 0 20px;
+      }
+    }
+    .img {
+      height: 300px;
+      width: 100%;
+      border-radius: 30px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      // background-image: url(../../assets/img/sevenDeadlySins//icons/PRIDE.webp);
+      @media (max-width: 524px) {
+        background-size: cover;
+        height: 300px;
+        width: auto;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+  &-showcase {
+    @extend .home-desc;
+    img {
+      max-width: 500px;
+      width: 100%;
+      min-width: 300px;
+      // height: auto;
+    }
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+#home-project {
+  @media (max-width: 524px) {
+    padding-bottom: 40px !important;
+  }
+}
+h2 {
+  i {
+    @media (max-width: 524px) {
+      font-size: 18px;
+    }
+  }
+}
+#home-faq {
+  @media (max-width: 524px) {
+    padding-top: 0px;
+  }
+}
+.vertical-timeline.vertical-timeline--two-columns:before {
+  background: #e3597f;
+}

@@ -1,0 +1,40 @@
+ol {
+  padding-inline-start: 20px;
+  li {
+    padding-bottom: 20px;
+  }
+}
+ul {
+  padding-inline-start: 20px;
+  li {
+    padding-bottom: 0px;
+  }
+}
+
+li:before {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 8px;
+  @media (max-width: 524px) {
+    text-align: center;
+  }
+  h3 {
+    @media (max-width: 524px) {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
+//es
+.title-out {
+  @extend .title;
+  font-size: 35px;
+  @media (max-width: 524px) {
+    font-size: 28px;
+  }
+}

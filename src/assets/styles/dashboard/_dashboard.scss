@@ -1,0 +1,139 @@
+.detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.detail-content {
+    // width: 877px;
+    max-width: 877px;
+    // min-height: 616px;
+    width: 100%;
+    height: fit-content;
+    // height: 400px;
+    // margin-top: 40px;
+    margin-bottom: auto;
+    //    margin-left: -170px;
+    @media (max-width: 1200px) {
+        width: 100%;
+        // margin: 0 30px;
+    }
+    @media (max-width: 524px) {
+        width: 100%;
+        height: fit-content;
+    }
+
+    h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        padding-bottom: 10px;
+        color: #014a94;
+    }
+
+    .detail-card {
+        // width: 877px;
+        // height: 500px;
+        // width: 100%;
+        // max-width: 877px;
+        // min-height: 616px;
+        // height: fit-content;
+        width: 95%;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        min-height: 400px;
+        max-height: 60%;
+        height: fit-content;
+        // width: 100%;
+
+        // @media (max-width: 524px) {
+        //     width: 100%;
+        //     height: fit-content;
+        // }
+        .label-right {
+            font-size: 13px;
+            color: #888;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .label-left{
+            font-size: 13px;
+            color: #888;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .label-content {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+            color: #32344b;
+            margin-top: -13px;
+        }
+
+        .label-nominal {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-size: 13px;
+            color: #888;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+        }
+
+        .nominal-right {
+            font-size: 18px;
+            color: #65c466;
+            font-weight: 600;
+        }
+
+        hr {
+            margin-top: -3px;
+        }
+
+        .link-wa {
+                font-size: 15px;
+                color:green;
+                margin-left: 8px;
+                text-decoration: underline;
+            }
+        
+
+        .status-agen {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            color: #014a94;
+        }
+
+        .space-status {
+            margin-top:10px; 
+            padding-top:10px;
+        }
+
+        .baris-button {
+            margin-top: 20px;
+
+            button {
+                width: 120px;
+                float: right;
+                border-style: none;
+                color: #fff;
+                background-color: #dc4c44;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 5px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 13px;
+            }
+            .discard {
+                background-color: #45c55a;
+            }
+        }
+
+    }
+}
+
+
