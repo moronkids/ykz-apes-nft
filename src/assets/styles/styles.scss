@@ -25,3 +25,23 @@
 //         width: 768px;
 //     }
 // }
+.deactive,
+.MuiTouchRipple-root,
+img {
+    &:hover {
+        background: unset !important;
+        // background-color: red !important;
+    }
+    &:active {
+        // background-color: red !important;
+        background: unset !important;
+    }
+    &:focus {
+        // background-color: red !important;
+        background: unset !important;
+    }
+}
+.MuiTouchRipple-rippleVisible,
+.MuiTouchRipple-child {
+    background-color: unset !important;
+}
