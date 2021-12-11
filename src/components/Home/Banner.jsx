@@ -1,9 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import Connect from "components/Transactions";
 import { Hooks } from "providers";
-import Hero from "assets/img/hero.png";
-import AnotherHero from "assets/img/hero-line.svg";
-import ReactPlayer from "react-player/youtube";
 function Banner() {
   const {
     setScroll,
