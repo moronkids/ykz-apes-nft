@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
+@import url("http://fonts.cdnfonts.com/css/pixeboy");
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -57,9 +57,10 @@
 }
 // @import "print";
 @font-face {
-    font-family: "EndlessBossBattle";
+    font-family: "Pixeboy", sans-serif;
     src: url("EndlessBossBattle.ttf") format("opentype");
 }
 body {
-    font-family: "EndlessBossBattle";
+    font-family: "Pixeboy", sans-serif;
+    background-color: #ffffe3;
 }

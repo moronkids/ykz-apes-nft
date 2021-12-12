@@ -6,8 +6,9 @@ const Index = (props) => {
   const [barMobile, setBarMobile] = useState(false);
   const [wallet_, setWallet_] = useState(false);
   const [datas, setDatas] = useState([]);
-  const [publicKey, setPublicKey] = useState()
-  const [candyM, setCandyM] = useState()
+  const [publicKey, setPublicKey] = useState();
+  const [candyM, setCandyM] = useState();
+  const [blnc, setBlnc] = useState();
   const value = {
     scroll,
     setScroll,
@@ -19,8 +20,12 @@ const Index = (props) => {
     setTimer,
     datas,
     setDatas,
-    candyM, setCandyM,
-    publicKey, setPublicKey
+    candyM,
+    setCandyM,
+    publicKey,
+    setPublicKey,
+    blnc,
+    setBlnc,
   };
   return <Hooks.Provider value={value}>{props.children}</Hooks.Provider>;
 };

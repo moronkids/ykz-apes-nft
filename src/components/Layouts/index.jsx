@@ -21,8 +21,8 @@ function Index(props) {
       {/* <div style={{ overflow: "auto" }}> */}
       <Suspense fallback={""}>
         <>
-          <BarMobile />
-          <Navbar />
+          {/* <BarMobile /> */}
+          {/* <Navbar /> */}
           {/* <NavbarMobile /> */}
         </>
       </Suspense>

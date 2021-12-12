@@ -21,19 +21,20 @@ import { Hooks } from "providers";
 
 const ConnectButton = styled(WalletDialogButton)`
 
-padding: unset !important;
-    width: unset !important;
-    width: unset !important;
-    font-family: unset !important;
-    font-size: unset !important;
-    font-weight: unset !important;
-    color: unset !important;
-    background-color:unset !important;
-    box-shadow: unset !important;
-    border-radius: 20px !important;
-    span:hover{
-      box-shadow: unset !important;
-      border-radius: 10px !important
+    -webkit-box-pack: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    min-width: 200px !important;
+    background: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 600 !important;
+    font-size: 1.6rem !important;
+    padding: 5px 10px !important;
+    font-family: pixeboy !important;
+    button:hover {
+      background: #E3597F !important;
+      border: unset !important;
+
     }
     `
   ;
@@ -104,9 +105,8 @@ background: unset !important;
 `; // add your styles here
 
 const MintButton = styled(Button)`
-background: unset !important;
     span:hover {
-      box-shadow: unset !important;
+      box-shadow: red !important;
       border-radius: 10px !important
     }
 `; // add your styles here
@@ -131,7 +131,7 @@ const Home = (props: HomeProps) => {
   const [itemsAvailable, setItemsAvailable] = useState(0);
   const [itemsRedeemed, setItemsRedeemed] = useState(0);
   const [itemsRemaining, setItemsRemaining] = useState(0);
-  const { wallet_, setWallet_, setDatas, publicKey, setPublicKey, candyM, setCandyM } = useContext(Hooks)
+  const { wallet_, setWallet_, setDatas, datas, publicKey, setBlnc, setPublicKey, candyM, setCandyM } = useContext(Hooks)
   const [alertState, setAlertState] = useState<AlertState>({
     open: false,
     message: "",
@@ -146,7 +146,6 @@ const Home = (props: HomeProps) => {
   const refreshCandyMachineState = () => {
     (async () => {
       if (!wallet) return;
-
       const {
         candyMachine,
         goLiveDate,
@@ -234,6 +233,7 @@ const Home = (props: HomeProps) => {
       if (wallet) {
         const balance = await props.connection.getBalance(wallet.publicKey);
         setBalance(balance / LAMPORTS_PER_SOL);
+
       }
       setIsMinting(false);
       refreshCandyMachineState();
@@ -246,6 +246,7 @@ const Home = (props: HomeProps) => {
         const balance = await props.connection.getBalance(wallet.publicKey);
         setBalance(balance / LAMPORTS_PER_SOL);
         setWallet_(true)
+        setBlnc(balance)
         setPublicKey(wallet.publicKey)
       }
     })();
@@ -284,26 +285,30 @@ const Home = (props: HomeProps) => {
           <ConnectButtonMobile>CONNECT WALLET</ConnectButtonMobile>
         ) : (
           <ConnectButton>
-            <img src={CW} alt="" width="200px" height="auto" />
+            CONNECT WALLET
           </ConnectButton>
         ) : (
           <MintButton
             disabled={isSoldOut || isMinting || !isActive}
             onClick={() => onMint()}
-            className="teamseas"
+            // className="teamseas"
             variant="contained"
             style={{
-              // margin-top: 20px !important;
+
+
+              textAlign: 'center',
+              // minWidth: '200px !important',
+              backgroundColor: '#000000',
+              color: 'rgb(255, 255, 255)',
+              fontWeight: 600,
+              fontSize: '1.6rem',
+              padding: '5px 10px',
+              fontFamily: 'pixeboy',
+              minWidth: '200px',
               width: '100%',
-              borderRadius: '20px !important',
-              boxShadow: 'unset',
-              padding: '0px',
-              fontStyle: 'bold',
-              // fontSize: '22px',
-              background: 'unset !important',
-              fontSize: ' 22px !important',
-              fontWeight: 500,
-              color: '#1e1339 !important',
+              margin: '0 auto',
+              justifyContent: 'center',
+              display: 'flex'
 
             }}
           >
@@ -315,7 +320,7 @@ const Home = (props: HomeProps) => {
                   <CircularProgress />
                 </div>
               ) : (
-                <div className="stat"><img src={Mint} width="200px" height="auto" /></div>
+                <>MINT</>
               )
             ) : (
               <Countdown
